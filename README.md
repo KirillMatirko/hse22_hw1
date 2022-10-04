@@ -39,7 +39,7 @@ platanus_trim sub
 platanus_internal_trim subMP*
 mkdir multiqc_trimmed
 mkdir fastqc_trimmed
-ls sub* matep*| xargs -tI{} fastqc -o fastqc_trimmed {}
+ls sub* subMP*| xargs -tI{} fastqc -o fastqc_trimmed {}
 multiqc -o multiqc_trimmed fastqc_trimmed
 ```
 
@@ -131,3 +131,42 @@ screen platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fq.trimmed sub2.fq.
 output_scaffold = analysis(open('Poil_scaffold.fa', 'r'),'Скаффолды')
 ```
 ![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/scaffold_analysis.png)
+
+### 12. Считаем число гэпов для самого длинного скаффолда
+
+```python
+length_of_gaps = output_scaffold.count('N')
+output_scaffold_new = re.sub(r'N{2,}', 'N', output_scaffold)
+num_of_gaps = output_scaffold_new.count('N')
+print(f'Длина гэпов: {length_of_gaps}\n\
+Число гэпов: {num_of_gaps}')
+```
+![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/gaps.png)
+
+### 13. Уменьшаем число гэпов
+
+```bash
+screen platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fq.trimmed sub2.fq.trimmed -OP2 subMP1.fq.trimmed subMP2.fq.trimmed 2
+```
+
+### 14. Считаем число гэпов для самого длинного скаффолда в укороченной версии
+
+```python
+output_gapClosed = analysis(open('Poil_gapClosed.fa', 'r'),'Скаффолды с укороченными гэпами')
+```
+![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/scaffold_truncated_analysis.png)
+
+```python
+length_of_gaps2 = output_gapClosed.count('N')
+output_gapClosed_new = re.sub(r'N{2,}', 'N', output_gapClosed)
+num_of_gaps2 = output_gapClosed_new.count('N')
+print(f'Укороченная версия\n\
+Длина гэпов: {length_of_gaps2}\n\
+Число гэпов: {num_of_gaps2}')
+```
+![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/gaps_truncated.png)
+
+### 15. Удаляем подрезанные чтения
+
+```bash
+```
