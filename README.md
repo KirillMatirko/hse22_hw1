@@ -69,6 +69,8 @@ screen platanus assemble -o Poil -f sub1.fq.trimmed sub2.fq.trimmed 2
 #### a) Питоновская функция, которую потом используем и для скаффолдов
 
 ```python
+import re
+
 def analysis(file,label):
   lengths=[]
   l=0
