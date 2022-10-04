@@ -64,6 +64,8 @@ screen platanus assemble -o Poil -f sub1.fq.trimmed sub2.fq.trimmed 2
 
 ### 9. Анализ контигов
 
+Ссылка на Colab https://colab.research.google.com/drive/1K6Rqg3CRt1OJiBYv9Wfe1fKg7iyU3qST?usp=sharing
+
 #### a) Питоновская функция, которую потом используем и для скаффолдов
 
 ```python
