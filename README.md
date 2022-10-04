@@ -125,3 +125,9 @@ output_contig = analysis(open('Poil_contig.fa', 'r'),'Контиги')
 ```bash
 screen platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fq.trimmed sub2.fq.trimmed -OP2 subMP1.fq.trimmed subMP2.fq.trimmed 2
 ```
+### 11. Анализ данных для скаффолдов
+
+```python
+output_scaffold = analysis(open('Poil_scaffold.fa', 'r'),'Скаффолды')
+```
+![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/scaffold_analysis.png)
