@@ -27,7 +27,7 @@ mkdir multiqc
 multiqc -o multiqc fastqc
 ```
 ### 4. Скриншоты с multiqc
-![](https://github.com/KirillMatirko/hse22hw1/raw/main/pics/gen_stat.png)
+![](https://github.com/KirillMatirko/hse22hw1/blob/main/pics/gen_stat.png)
 
 ### 5. Подрезка чтений и получение по ним статистики
 
