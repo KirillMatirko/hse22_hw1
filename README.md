@@ -166,7 +166,16 @@ print(f'Укороченная версия\n\
 ```
 ![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/gaps_truncated.png)
 
-### 15. Удаляем подрезанные чтения
+### 15. Записываем самые длинные скаффолды
+
+```python
+with open('longest_scaffold.fa', 'w') as f:
+  f.write(output_scaffold)
+with open('longest_truncated_scaffold.fa', 'w') as f:
+  f.write(output_gapClosed)
+```
+
+### 16. Удаляем подрезанные чтения
 
 ```bash
 rm sub*
