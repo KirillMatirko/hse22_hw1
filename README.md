@@ -28,6 +28,9 @@ multiqc -o multiqc fastqc
 ```
 ### 4. Скриншоты с multiqc
 ![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/gen_stat.png)
+![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/seq_scores.png)
+![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/mean_scores.png)
+![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/per_seq_scores.png)
 
 ### 5. Подрезка чтений и получение по ним статистики
 
