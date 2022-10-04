@@ -26,8 +26,10 @@ ls sub* subMP* | xargs -P 2 -tI{} fastqc -o fastqc {}
 mkdir multiqc
 multiqc -o multiqc fastqc
 ```
+### 4. Скриншоты с multiqc
+![](https://github.com/KirillMatirko/hse22hw1/raw/main/pics/gen_stat.png)
 
-### 4. Подрезка чтений и получение по ним статистики
+### 5. Подрезка чтений и получение по ним статистики
 
 ```bash
 platanus_trim sub
@@ -38,7 +40,7 @@ ls sub* matep*| xargs -tI{} fastqc -o fastqc_trimmed {}
 multiqc -o multiqc_trimmed fastqc_trimmed
 ```
 
-### 5. Удаление исходных чтений
+### 6. Удаление исходных чтений
 
 ```bash
 rm sub1.fq sub2.fq subMP1.fq subMP2.fq
