@@ -183,3 +183,6 @@ with open('longest_truncated_scaffold.fa', 'w') as f:
 ```bash
 rm sample* matched_sample*
 ```
+### Бонусная часть
+
+### 1. Вдвое меньший размер выборки (5e6 --> 2.5e^6; 1.5e^6 --> 0.75e^6)
