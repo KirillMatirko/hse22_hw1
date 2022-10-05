@@ -69,8 +69,6 @@ screen platanus assemble -o Poil -f sample1.fastq.trimmed sample2.fastq.trimmed 
 #### a) Питоновская функция, которую потом используем и для скаффолдов
 
 ```python
-import re
-
 def analysis(file,label):
   lengths=[]
   l=0
@@ -96,21 +94,22 @@ def analysis(file,label):
   
   lengths.append(l)
   lengths.sort(reverse=True)
-  num_of_contings=len(lengths)
+  num_of_elements=len(lengths)
   total_length=sum(lengths)
   max_length=lengths[0]
   N50=0
 
   criterion=0
   for el in lengths:
+    criterion += el
     if criterion < total_length/2:
-      criterion += el
+      pass
     else:
       N50=el
       break
 
   print(f'{label}\n\
-Число: {num_of_contings}\n\
+Число: {num_of_elements}\n\
 Суммарная длина: {total_length}\n\
 Максимальная длина: {max_length}\n\
 N50: {N50}')
