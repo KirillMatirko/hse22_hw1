@@ -149,7 +149,7 @@ print(f'Длина гэпов: {length_of_gaps}\n\
 ### 13. Уменьшаем число гэпов
 
 ```bash
-screen platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fq.trimmed sub2.fq.trimmed -OP2 subMP1.fq.trimmed subMP2.fq.trimmed 2
+screen platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sample1.fastq.trimmed sample2.fastq.trimmed -OP2 matched_sample1.fastq.int_trimmed matched_sample2.fastq.int_trimmed 2> gaps.log
 ```
 
 ### 14. Считаем число гэпов для самого длинного скаффолда в укороченной версии
