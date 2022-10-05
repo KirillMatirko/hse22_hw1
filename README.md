@@ -12,10 +12,10 @@ ln -s /usr/share/data-minor-bioinf/assembly/oilMP_S4_L001_R2_001.fastq
 ### 2. Выбираем случайные чтения
 
 ```bash
-seqtk sample -s927 oil_R1.fastq 5000000 > sub1.fq
-seqtk sample -s927 oil_R2.fastq 5000000 > sub2.fq
-seqtk sample -s927 oilMP_S4_L001_R1_001.fastq 1500000 > subMP1.fq
-seqtk sample -s927 oilMP_S4_L001_R2_001.fastq 1500000 > subMP2.fq
+seqtk sample -s927 oil_R1.fastq 5000000 > sample1.fastq
+seqtk sample -s927 oil_R2.fastq 5000000 > sample2.fastq
+seqtk sample -s927 oilMP_S4_L001_R1_001.fastq 1500000 > matched_sample1.fastq
+seqtk sample -s927 oilMP_S4_L001_R2_001.fastq 1500000 > matched_sample2.fastq
 ```
 
 ### 3. Оценка качества чтений
