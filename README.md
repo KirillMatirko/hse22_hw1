@@ -181,5 +181,5 @@ with open('longest_truncated_scaffold.fa', 'w') as f:
 ### 16. Удаляем подрезанные чтения
 
 ```bash
-rm sub*
+rm sample* matched_sample
 ```
