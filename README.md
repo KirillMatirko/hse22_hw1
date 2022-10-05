@@ -193,3 +193,5 @@ rm sample* matched_sample*
 
 ### 2. Вчетверо меньший размер выборки (5e6 --> 1.25e6; 1.5e6 --> 0.375e6)
 
+
+![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/bonus_4less.png)
