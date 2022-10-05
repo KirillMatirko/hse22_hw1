@@ -53,7 +53,7 @@ multiqc -o multiqc_trimmed fastqc_trimmed
 ### 7. Удаление исходных чтений
 
 ```bash
-rm sub1.fq sub2.fq subMP1.fq subMP2.fq
+rm sample1.fastq sample2.fastq matched_sample1.fastq matched_sample2.fastq
 ```
 
 ### 8. Сбор контигов
