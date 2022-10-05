@@ -195,3 +195,7 @@ rm sample* matched_sample*
 
 
 ![](https://github.com/KirillMatirko/hse22_hw1/blob/main/pics/bonus_4less.png)
+
+### Вывод
+
+Число котингов и скаффолдов растёт, оданако, растёт и число/длина гэпов. Поэтому качество сборки падает.
