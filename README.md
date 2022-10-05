@@ -39,7 +39,7 @@ platanus_trim sample1.fastq sample2.fastq
 platanus_internal_trim matched_sample1.fastq matched_sample2.fastq
 mkdir multiqc_trimmed
 mkdir fastqc_trimmed
-ls sub* subMP*| xargs -tI{} fastqc -o fastqc_trimmed {}
+fastqc -o fastqc_trimmed sample1.fastq.trimmed sample2.fastq.trimmed matched_sample1.fastq.int_trimmed matched_sample2.fastq.int_trimmed
 multiqc -o multiqc_trimmed fastqc_trimmed
 ```
 
