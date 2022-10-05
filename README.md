@@ -22,8 +22,8 @@ seqtk sample -s927 oilMP_S4_L001_R2_001.fastq 1500000 > matched_sample2.fastq
 
 ```bash
 mkdir fastqc
-ls sub* subMP* | xargs -P 2 -tI{} fastqc -o fastqc {}
 mkdir multiqc
+fastqc -o fastqc sample1.fastq sample2.fastq matched_sample1.fastq matched_sample2.fastq
 multiqc -o multiqc fastqc
 ```
 ### 4. Скриншоты с multiqc
