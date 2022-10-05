@@ -35,8 +35,8 @@ multiqc -o multiqc fastqc
 ### 5. Подрезка чтений и получение по ним статистики
 
 ```bash
-platanus_trim sub
-platanus_internal_trim subMP*
+platanus_trim sub1.fq sub2.fq
+platanus_internal_trim subMP1.pg subMP2.fq
 mkdir multiqc_trimmed
 mkdir fastqc_trimmed
 ls sub* subMP*| xargs -tI{} fastqc -o fastqc_trimmed {}
