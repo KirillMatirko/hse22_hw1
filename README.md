@@ -59,7 +59,7 @@ rm sample1.fastq sample2.fastq matched_sample1.fastq matched_sample2.fastq
 ### 8. Сбор контигов
 
 ```bash
-screen platanus assemble -o Poil -f sub1.fq.trimmed sub2.fq.trimmed 2
+screen platanus assemble -o Poil -f sample1.fastq.trimmed sample2.fastq.trimmed 2
 ```
 
 ### 9. Анализ контигов
