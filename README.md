@@ -127,7 +127,7 @@ output_contig = analysis(open('Poil_contig.fa', 'r'),'Контиги')
 ### 10. Сбор скаффолдов
 
 ```bash
-screen platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fq.trimmed sub2.fq.trimmed -OP2 subMP1.fq.trimmed subMP2.fq.trimmed 2
+screen platanus scaffold -o Poil -c Poil_contig.fa -IP1 sample1.fastq.trimmed sample2.fastq.trimmed -OP2 matched_sample1.fastq.int_trimmed matched_sample2.fastq.int_trimmed 2>scaffold.log
 ```
 ### 11. Анализ данных для скаффолдов
 
